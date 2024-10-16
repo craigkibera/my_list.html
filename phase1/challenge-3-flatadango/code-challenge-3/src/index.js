@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
         .catch((error) => {
-            console.log('Error:', error);
+            console.log( error);
         });
 
         fetch('http://localhost:3000/films')
@@ -56,12 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     const listItem = document.createElement('li');
                     listItem.textContent = film.title;
                     listItem.classList.add('film', 'item');
+                    function updateMovieDetails(film) {
+                        document.getElementById('title').innerText = film.title;
+                        document.getElementById('showtime').innerText = film.showtime;
+                        document.getElementById('ticket-num').innerText = film.capacity - film.tickets_sold;
+                        document.getElementById('runtime').innerText = film.runtime;
+                        document.getElementById('film-info').innerText = `${film.runtime} minutes`;
+                        document.getElementById('poster').src = film.poster;}
+                
 
                     const deleteButton = document.createElement('button');
                     deleteButton.textContent = 'Delete';
                     listItem.appendChild(deleteButton);
 
                     parentList.appendChild(listItem);
+                    
+                    listItem.addEventListener('click', () => {
+                        updateMovieDetails(film);
+                    });
 
                    
                     deleteButton.addEventListener("click", () => {
@@ -72,51 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch((error) => {
                 console.log('Error:', error);
             });
-            // function movieDetails() {
-            //     fetch("http://localhost:3000/films/7")
-            //         .then((r) => r.json()) // Corrected .json to .json()
-            //         .then((data) => {
-            //             const image = document.getElementById("poster");
-            //             image.src = data.poster;
-            //             image.alt = data.title;
-            //             image.append()
-            //             const card = document.querySelector(".card");
-            
-            //             // Corrected usage of querySelector on card element.
-            //             card.querySelector("#title").textContent = data.title;
-            //             card.querySelector("#runtime").textContent = `${data.runtime} mins`;
-            //             card.querySelector("#film-info").textContent = data.description;
-            //             card.querySelector("#showtime").textContent = data.showtime;
-            //             card.querySelector("#ticket-num").textContent = Math.abs(data.capacity - data.tickets_sold);
-            //             card.querySelector("#buy-ticket").addEventListener("click", () => {
-            //                 function buyTicket(){
-            //                     let tickets = Math.abs(data.capacity - data.tickets_sold);
-            //                     if(tickets > 0){
-            //                         let patchMovie = {
-            //                             tickets_sold: data.tickets_sold + 1, 
-            //                            };
-            //                         fetch('http://localhost:3000/films/7', {
-            //                             method: "PATCH",
-            //                             headers: {
-            //                                 "Content-Type": "application/json",
-            //                             },
-            //                             body: JSON.stringify(patchMovie)
-                            
-            //                         })
-            //                         .then((r) => r.json())
-            //                         .then((data) => {
-            //                             card.querySelector("#ticket-num").textContent = Math.abs(data.capacity - patchMovie.tickets_sold);
-            //                             console.log(data)
-            //                         })
-            //                     }else{
-            //                         card.querySelector("#buy-ticket").innerText = "Sold-Out";
-            //                     }
-            //                 }
-            //                 buyTicket()
-            //             })
-            //         })
-            //         .catch((error) => console.error("Error fetching movie details:", error)); // Optional error handling
-            // }
             
             movieDetails()
     function deleteMovie(movieId, listItem) {
