@@ -1,0 +1,65 @@
+# ("Fallen Heroes")
+
+#### Date, 2024/10/17
+
+#### By *Craig Kibera*
+
+## Description
+This project displays cards of notable figures and allows users to view detailed information, "like" them, or delete entries. The data is fetched from a local server, and interactions with the API update the state of each person in real-time.
+## Features
+Fetch and display a list of people from the API.
+Users can:
+View each person’s biography and other details.
+"Like" a person, which increments the like count and updates the server.
+Delete a person, which removes them from the list and deletes their entry from the server.
+Click on a person’s image to view a detailed preview.
+
+## API Endpoints
+GET /people: Fetch all people data.
+PATCH /people/:id: Update a person’s likes.
+DELETE /people/:id: Delete a person from the list.
+
+## How to Use
+Start the JSON server and open the project in a browser.
+The page will display a list of people with their images, biographies, and other details.
+Click "Like" to increment the likes.
+Click "Delete" to remove a person from the list.
+Click on an image to open a preview. Click anywhere in the preview to close it.
+
+## Dependencies
+json-server: For serving the mock backend.
+Modern browser (Chrome, Firefox, etc.) to run the project.
+
+## Installation
+You use git clone to be able to download the documents in the GitHub
+
+## Installation Requirements
+Git
+
+### Installation instruction
+```
+Git clone https://github.com/craigkibera
+
+```
+
+# Live Link
+[Git](gh-pages link)
+
+## Technologies used
+HTML for structure.
+CSS for styling.
+JavaScript (ES6) for logic and DOM manipulation.
+JSON Server as a mock backend.
+## Support and contact details
+github.com/craigkibera
+### License
+This project is open-source and available under the MIT License.
+Copyright (c) 2024.
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+{
+  "people": [
+    {
+      "id": "1",
+      "name": "Tom Mboya",
+      "birthdate": "1930-08-15",
+      "deathdate": "1969-07-05",
+      "likes": 8,
+      "occupation": "Politician, Trade Unionist",
+      "nationality": "Kenyan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Tom_Mboya_1962_%28cropped%29.jpg",
+      "biography": "Tom Mboya was a key figure in Kenya's struggle for independence and development. He played a pivotal role in the Airlift Africa program and the formation of KANU.",
+      "notable_achievements": [
+        "Airlift Africa program organizer",
+        "Co-founder of KANU",
+        "Championed workers' rights"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Thomas Sankara",
+      "birthdate": "1949-12-21",
+      "deathdate": "1987-10-15",
+      "likes": 6,
+      "occupation": "President, Revolutionary Leader",
+      "nationality": "Burkinabé",
+      "image": "https://pics.craiyon.com/2023-10-24/9c4e69cd97ad4b81b77fd19f665d2ede.webp",
+      "biography": "Thomas Sankara, known as the 'Che Guevara of Africa,' led a revolution in Burkina Faso, promoting self-sufficiency and women's rights.",
+      "notable_achievements": [
+        "Changed the country's name from Upper Volta to Burkina Faso",
+        "Promoted women's rights and environmental protection",
+        "Advocated for debt cancellation for African nations"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Ronald Ngala",
+      "birthdate": "1923-12-01",
+      "deathdate": "1972-12-25",
+      "likes": 10,
+      "occupation": "Politician",
+      "nationality": "Kenyan",
+      "image": "https://cdn.standardmedia.co.ke/images/saturday/wngvuribcr5rujmz5dab6091dd2db.jpg",
+      "biography": "Ronald Ngala was a founding member of KADU and a prominent advocate for regionalism and minority rights in post-independence Kenya.",
+      "notable_achievements": [
+        "Founder of the Kenya African Democratic Union (KADU)",
+        "Advocated for a federal system in Kenya",
+        "Prominent leader in Kenya's early politics"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Nelson Mandela",
+      "birthdate": "1918-07-18",
+      "deathdate": "2013-12-05",
+      "likes": 5,
+      "occupation": "President, Anti-Apartheid Leader",
+      "nationality": "South African",
+      "image": "https://media.gettyimages.com/id/171532260/photo/state-president-of-south-africa-nelson-mandela-smiles-on-may-22-bonn-germany.jpg?s=612x612&w=0&k=20&c=MVfUPkooJjQuTmOJHwZsK7ZRGAUmwaOrVNMOK8fX8ps=",
+      "biography": "Nelson Mandela was a key figure in the fight against apartheid and became South Africa's first black president in 1994.",
+      "notable_achievements": [
+        "Led the fight against apartheid",
+        "Awarded the Nobel Peace Prize in 1993",
+        "First black President of South Africa"
+      ]
+    }
+  ]
+}

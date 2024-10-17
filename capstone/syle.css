@@ -1,0 +1,184 @@
+body {
+    background-color: #F5D2D2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .img1 {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    width: 100px;
+}
+
+
+.img2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.img3 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.img4 {
+    position: relative;
+    height: 100px;
+    width: 150px;
+}
+
+.img5 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+} */
+
+button.deleteBtn {
+    background: black;
+    color: white;
+    border: none;
+    margin: 12px;
+    padding: 10px;
+    width: fit-content;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 11px;
+    transition: all ease 0.8s;
+}
+button.deleteBtn:hover {
+    cursor: pointer;
+    background: red;
+    transition: all ease 0.8s;
+}
+
+.card:hover {
+    max-width: 500px;
+    box-shadow: 0 0 15px grey;
+    transition: all ease 1s;
+    border-radius: 21px;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+   padding: 1rem;
+}
+.card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 300px;
+    height: fit-content;
+    transition: all ease 1s;
+}
+button.likebtn {
+    border: none;
+    padding: 11px;
+    margin-left: 12px;
+    border-radius: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all ease 1s;
+}
+button.likebtn:hover {
+    cursor: pointer;
+    background: green;
+    color: white;
+    transition: all ease 1s;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+button#actions {
+    width: 100%;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+}
+
+button.delete {
+    background: black;
+    color: white;
+    transition: all ease 0.8s;
+}
+button.like:hover{
+    background: green;
+    cursor: pointer;
+    color: white;
+    transition: all ease 0.8s;
+}
+button.delete:hover {
+    background: red;
+    cursor: pointer;
+    color: white;
+    transition: all ease 0.8s;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.text-content {
+    padding: 0.5rem;
+}
+form {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    width: fit-content;
+    background: white;
+    box-shadow: 0 0 6px gray;
+    padding: 9px;
+    margin: 8px;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    gap: 5px;
+}
+input#input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.preview-show {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: brown;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.center-content {
+    display: flex;
+    padding: 6%;
+}
+.center-content img.img5 {
+    width: 300px;
+    height: fit-content;
+    border-radius: 27px;
+    height: 300px;
+}
+.center-content {
+    padding: 6%;
+    align-items: flex-start;
+}
+.text-content p {
+    font-size: 13px;
+    font-display: whitesmoke;
+}   
