@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // document.addEventListener("DOMContentLoaded", () => {
   //   const section = document.getElementById("container");
   //   const searchInput = document.getElementById("search");
+  //   const searchValue = searchInput.value
   //      if (includes(searchValue)) {
   //         card.style.display = `${people.id}`;  // Show card if it matches the search.
   //       } else {
