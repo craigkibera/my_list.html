@@ -93,3 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
 });
+    const toggleSwitch = document.getElementById("toggle-mode");
+  toggleSwitch.addEventListener("change", () => {
+    document.body.classList.toggle("dark-mode");
+  });  
+ 
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const section = document.getElementById("container");
+  //   const searchInput = document.getElementById("search");
+  //      if (includes(searchValue)) {
+  //         card.style.display = `${people.id}`;  // Show card if it matches the search.
+  //       } else {
+  //         card.style.display = "none";  // Hide card if it doesn't match.
+  //       }
+  //     });
+  
+  
